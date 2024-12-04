@@ -9,7 +9,7 @@ public interface RentalDetailsServie {
 
      void addRentalDetails(RentalDetails rentalDetails);
 
-     Rental searchRentalDetailByID(Long rentalDetailID);
+     RentalDetails searchRentalDetailByID(Long rentalDetailID);
 
      void updateRentalDetail(RentalDetails rentalDetails);
 

@@ -25,8 +25,8 @@ public class RentalDetailsServiceImpl implements RentalDetailsServie {
     }
 
     @Override
-    public Rental searchRentalDetailByID(Long rentalDetailID) {
-        return mapper.map(rentalDetailsDao.findById(rentalDetailID),Rental.class);
+    public RentalDetails searchRentalDetailByID(Long rentalDetailID) {
+        return mapper.map(rentalDetailsDao.findById(rentalDetailID),RentalDetails.class);
     }
 
     @Override

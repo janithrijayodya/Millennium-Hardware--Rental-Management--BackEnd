@@ -19,5 +19,9 @@ public class CustomerEntity {
     private String customerName;
     private String customerContact;
     private String customerCity;
+
+    @ManyToOne
+    @JoinColumn(name = "rentalID", nullable = false)
+    private RentalEntity rental;
 }
 

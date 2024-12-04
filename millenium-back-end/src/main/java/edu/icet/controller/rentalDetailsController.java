@@ -27,7 +27,7 @@ public class rentalDetailsController {
         }
     }
     @GetMapping("/search_rentalDetails_by_id/{rentalDetailID}")
-    public Rental searchRentalDeails(@PathVariable Long rentalDetailID){
+    public RentalDetails searchRentalDeails(@PathVariable Long rentalDetailID){
         return service.searchRentalDetailByID(rentalDetailID);
     }
 
