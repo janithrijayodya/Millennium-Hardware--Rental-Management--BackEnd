@@ -1,5 +1,6 @@
-package edu.icet.Model;
+package edu.icet.Entity;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class RentalDetails {
+@Entity
+@Table(name="rentalDetails")
+public class RentalDetailsEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private double totalItemCost;
     private Integer quantity;
 }
