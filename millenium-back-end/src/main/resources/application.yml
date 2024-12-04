@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/millenniumhardware
+    username: root
+    password: 139746
+
+  jpa:
+    hibernate:
+      ddl-auto: update
